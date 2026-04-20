@@ -80,6 +80,10 @@ ul {
   background-color: white;
 }
 
+.section-projects {
+  background-color: white;
+}
+
 .section-books {
   background-color: var(--color-section-books);
 }
@@ -144,6 +148,19 @@ main {
   flex-direction: column;
   gap: var(--space-large);
   align-items: center;
+}
+
+.projects-list {
+  display: flex;
+  flex-direction: row;
+  gap: var(--space-medium);
+}
+
+.project-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-sm);
+  padding: var(--space-medium);
+  background-color: #fafafa;
 }
 
 table {
