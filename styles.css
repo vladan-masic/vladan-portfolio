@@ -161,6 +161,28 @@ main {
   border-radius: var(--space-sm);
   padding: var(--space-medium);
   background-color: #fafafa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.project-card a {
+  display: inline-block;
+  margin-top: var(--space-small);
+  padding: var(--space-sm) var(--space-medium);
+  background-color: var(--color-nav-bg);
+  color: var(--color-primary);
+  border-radius: var(--space-xs);
+}
+
+.project-card a:hover {
+  background-color: var(--color-nav-hover);
 }
 
 table {
