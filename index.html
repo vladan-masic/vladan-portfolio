@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>My Bio</title>
+
+</head>
+
+<body>
+    <header>
+        <h1>My Biography</h1>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#books">Books</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="section-hero">
+            <h2>Hello, I'm Vladan</h2>
+            <p>Aspiring Frontend Developer passionate about books, history, and learning.</p>
+        </section>
+        <section id="about" class="section-about">
+            <article>
+                <h2>About Me</h2>
+                <p>
+                    I love reading, traveling and socializing with good and interesting
+                    people.
+                </p>
+            </article>
+            <aside>
+                <p>Favorite genre: History</p>
+            </aside>
+        </section>
+        <section id="skills" class="section-skills">
+            <h2>Skills</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Responsive Design</li>
+                <li>Bootstrap</li>
+                <li>Git</li>
+                <li>React</li>
+            </ul>
+        </section>
+        <section id="books" class="section-books">
+            <article>
+                <h2>Favorite Books</h2>
+                <div class="books-layout">
+                    <div class="books-text">
+                        <p>My favorite books are:</p>
+                        <ul>
+                            <li>
+                                <em><a href="https://en.wikipedia.org/wiki/The_Brothers_Karamazov" target="_blank"
+                                        rel="noopener noreferrer">The Brothers Karamazov</a></em>
+                            </li>
+                            <li>
+                                <em><a href="https://en.wikipedia.org/wiki/Thinking,_Fast_and_Slow" target="_blank"
+                                        rel="noopener noreferrer">Thinking Fast and Slow</a></em>
+                            </li>
+                            <li>
+                                <em><a href="https://en.wikipedia.org/wiki/Guns,_Germs,_and_Steel" target="_blank"
+                                        rel="noopener noreferrer">Guns, Germs and Steel</a></em>
+                            </li>
+                        </ul>
+
+                        <h3>Book Details</h3>
+                        <table>
+                            <caption>Favorite Books and Authors</caption>
+                            <thead>
+                                <tr>
+                                    <th>Book</th>
+                                    <th>Author</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>The Brothers Karamazov</td>
+                                    <td>Fyodor Dostoevsky</td>
+                                </tr>
+                                <tr>
+                                    <td>Thinking Fast and Slow</td>
+                                    <td>Daniel Kahneman</td>
+                                </tr>
+                                <tr>
+                                    <td>Guns, Germs and Steel</td>
+                                    <td>Jared Diamond</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <img src="https://upload.wikimedia.org/wikipedia/en/c/c1/Thinking%2C_Fast_and_Slow.jpg"
+                        alt="Cover of Thinking, Fast and Slow by Daniel Kahneman" />
+                </div>
+            </article>
+        </section>
+        <section id="contact" class="section-contact">
+            <h2>Contact Me</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div class="form-row">
+                        <label for="name">Your Name:</label>
+
+                        <input type="text" placeholder="Enter your Name" id="name" name="name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="email">Your Email:</label>
+
+                        <input type="email" placeholder="Enter your Email" id="email" name="email" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="message">Your Message:</label>
+
+                        <textarea placeholder="Your message" id="message" rows="4" name="message" required></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Preferences</legend>
+                    <div class="form-row-inline">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <label for="newsletter">Subscribe to newsletter</label>
+                    </div>
+                    <p>Preferred contact method</p>
+                    <div class="form-row-inline">
+                        <input type="radio" id="email-radio" name="contact-method" value="email">
+                        <label for="email-radio">Email</label>
+                    </div>
+                    <div class="form-row-inline">
+                        <input type="radio" id="phone-radio" name="contact-method" value="phone">
+                        <label for="phone-radio">Phone</label>
+                    </div>
+
+                    <label for="genre">Favorite genre:</label>
+
+                    <select name="genre" id="genre">
+                        <option value="history">History</option>
+                        <option value="philosophy">Philosophy</option>
+                        <option value="literature">Literature</option>
+                    </select>
+
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by Vladan</p>
+    </footer>
+
+</body>
+
+</html>
