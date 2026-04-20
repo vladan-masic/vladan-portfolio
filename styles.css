@@ -1,0 +1,259 @@
+:root {
+  --space-small: 10px;
+  --space-medium: 20px;
+  --space-large: 30px;
+
+  --space-xs: 5px;
+  --space-sm: 8px;
+
+  --color-background: lightgrey;
+  --color-primary: darkgreen;
+  --color-secondary: darkblue;
+  --color-text: darkred;
+
+  --color-section-about: lightyellow;
+  --color-section-books: #f0f8ff;
+  --color-section-contact: #f5f5f5;
+
+  --color-border: #999;
+  --color-table-header: #ddd;
+
+  --color-nav-bg: #e6f2e6;
+  --color-nav-hover: #cce5cc;
+
+  --color-button: #4caf50;
+  --color-button-hover: #45a049;
+}
+
+body {
+  background-color: var(--color-background);
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  margin-bottom: var(--space-medium);
+  padding: var(--space-medium);
+  background-color: white;
+}
+
+h1 {
+  color: var(--color-secondary);
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: var(--space-small);
+}
+
+h2 {
+  color: var(--color-primary);
+  font-size: 1.5em;
+  margin-bottom: var(--space-small);
+}
+
+h3 {
+  margin-top: var(--space-medium);
+  margin-bottom: var(--space-small);
+}
+
+p {
+  color: var(--color-text);
+  margin-bottom: var(--space-small);
+}
+
+ul {
+  margin-bottom: var(--space-medium);
+  padding-left: var(--space-medium);
+}
+
+.section-hero {
+  text-align: center;
+  padding: var(--space-large);
+  background-color: white;
+  border-radius: var(--space-sm);
+}
+
+.section-about {
+  background-color: var(--color-section-about);
+}
+
+.section-skills {
+  background-color: white;
+}
+
+.section-books {
+  background-color: var(--color-section-books);
+}
+
+.section-contact {
+  background-color: var(--color-section-contact);
+}
+
+section {
+  margin: var(--space-medium) 0;
+  padding: var(--space-medium);
+  border: 1px solid var(--color-border);
+  border-radius: var(--space-sm);
+  width: 100%;
+  max-width: 800px;
+}
+
+section h2 {
+  margin-top: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-medium);
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-secondary);
+  display: block;
+  cursor: pointer;
+}
+
+a:hover {
+  color: red;
+}
+
+nav a {
+  color: var(--color-primary);
+  padding: var(--space-sm) var(--space-small);
+  background-color: var(--color-nav-bg);
+  border-radius: var(--space-xs);
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--color-nav-hover);
+  border-radius: var(--space-xs);
+}
+
+section p {
+  color: blue;
+}
+
+.section-about p {
+  color: purple;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-large);
+  align-items: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: var(--space-small);
+}
+
+th,
+td {
+  border: 1px solid var(--color-border);
+  padding: var(--space-sm);
+  text-align: left;
+}
+
+th {
+  background-color: var(--color-table-header);
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0;
+}
+
+.books-layout {
+  display: flex;
+  gap: var(--space-medium);
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.books-text {
+  flex: 1;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--space-medium);
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  padding: var(--space-xs);
+  border-radius: 4px;
+  border: 1px solid var(--color-border);
+  width: 100%;
+}
+
+fieldset {
+  margin-bottom: var(--space-medium);
+  padding: var(--space-medium);
+}
+
+.form-row-inline {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-medium);
+}
+
+button {
+  padding: var(--space-sm) var(--space-medium);
+  border-radius: var(--space-xs);
+  border: none;
+  background-color: var(--color-button);
+  color: white;
+  cursor: pointer;
+  margin-top: var(--space-medium);
+}
+
+button:hover {
+  background-color: var(--color-button-hover);
+}
+
+label {
+  margin-bottom: var(--space-xs);
+}
+
+footer {
+  text-align: center;
+  margin-top: var(--space-large);
+  padding: var(--space-medium);
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .books-layout {
+    flex-direction: column;
+  }
+
+  section {
+    padding: var(--space-medium);
+  }
+
+  nav a {
+    width: 100%;
+    max-width: 200px;
+    text-align: center;
+  }
+
+  img {
+    max-width: 220px;
+  }
+}
