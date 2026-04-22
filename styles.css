@@ -35,6 +35,15 @@ header {
   margin-bottom: var(--space-medium);
   padding: var(--space-medium);
   background-color: white;
+  border-radius: var(--space-medium);
+}
+
+header p {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: var(--space-medium);
+  color: var(--color-primary);
+  font-weight: bold;
 }
 
 h1 {
