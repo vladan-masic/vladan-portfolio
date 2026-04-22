@@ -12,7 +12,7 @@
   --color-text: darkred;
 
   --color-section-about: lightyellow;
-  --color-section-books: #f0f8ff;
+  --color-section-interests: #f0f8ff;
   --color-section-contact: #f5f5f5;
 
   --color-border: #999;
@@ -20,9 +20,6 @@
 
   --color-nav-bg: #e6f2e6;
   --color-nav-hover: #cce5cc;
-
-  --color-button: #4caf50;
-  --color-button-hover: #45a049;
 }
 
 body {
@@ -94,7 +91,7 @@ ul {
 }
 
 .section-interests {
-  background-color: var(--color-section-books);
+  background-color: var(--color-section-interests);
 }
 
 .section-contact {
