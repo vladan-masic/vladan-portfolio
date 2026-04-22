@@ -123,7 +123,6 @@ nav {
 a {
   text-decoration: none;
   color: var(--color-secondary);
-  display: block;
   cursor: pointer;
 }
 
@@ -132,6 +131,7 @@ a:hover {
 }
 
 nav a {
+  display: block;
   color: var(--color-primary);
   padding: var(--space-sm) var(--space-small);
   background-color: var(--color-nav-bg);
@@ -192,52 +192,6 @@ main {
 
 .project-card a:hover {
   background-color: var(--color-nav-hover);
-}
-
-.form-row {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: var(--space-medium);
-}
-
-input[type="text"],
-input[type="email"],
-textarea,
-select {
-  padding: var(--space-xs);
-  border-radius: 4px;
-  border: 1px solid var(--color-border);
-  width: 100%;
-}
-
-fieldset {
-  margin-bottom: var(--space-medium);
-  padding: var(--space-medium);
-}
-
-.form-row-inline {
-  display: flex;
-  align-items: center;
-  gap: var(--space-sm);
-  margin-bottom: var(--space-medium);
-}
-
-button {
-  padding: var(--space-sm) var(--space-medium);
-  border-radius: var(--space-xs);
-  border: none;
-  background-color: var(--color-button);
-  color: white;
-  cursor: pointer;
-  margin-top: var(--space-medium);
-}
-
-button:hover {
-  background-color: var(--color-button-hover);
-}
-
-label {
-  margin-bottom: var(--space-xs);
 }
 
 footer {
