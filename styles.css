@@ -84,7 +84,7 @@ ul {
   background-color: white;
 }
 
-.section-books {
+.section-interests {
   background-color: var(--color-section-books);
 }
 
@@ -207,17 +207,6 @@ img {
   max-width: 300px;
   display: block;
   margin: 0;
-}
-
-.books-layout {
-  display: flex;
-  gap: var(--space-medium);
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.books-text {
-  flex: 1;
 }
 
 .form-row {
